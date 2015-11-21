@@ -14,4 +14,6 @@
                         :compiler {:output-to "resources/public/js/compiled/app.js"
                                    :optimizations :advanced
                                    :pretty-print false
-                                   :externs ["externs.js"]}}]})
+                                   :externs ["resources/public/vendor/js/mo.min.js"]
+                                   :closure-warnings {:externs-validation :off
+                                                      :non-standard-jsdoc :off}}}]})

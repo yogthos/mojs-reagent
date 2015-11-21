@@ -1,4 +1,4 @@
-(ns mojs.core
+(ns mojs-reagent.core
     (:require [reagent.core :as reagent]))
 
 (defn translate-y [node]
@@ -7,8 +7,6 @@
      (str "translateY(" (* 200 progress) "px)"))))
 
 (defn animation-did-mount [this]
-  (.log js/console js/mojs)
-  (.log js/console js/mojs.Tween)
   (.run
    (js/mojs.Tween.
     (clj->js
